@@ -464,3 +464,16 @@ p {
       background-position: 100% top;
     }
   }
+
+
+  .namelanding{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   font-family: 'Raleway';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 96px;
+   margin-top: 220px;
+  align-items: center;
+  }
