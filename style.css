@@ -466,6 +466,14 @@ p {
   }
 
 
+
+  @media only screen and (max-width: 600px){
+    .namelanding{
+      font-size: 50px !important;
+    }
+
+  }
+
   .namelanding{
    display: flex;
    flex-direction: column;
@@ -474,6 +482,27 @@ p {
    font-style: normal;
    font-weight: 700;
    font-size: 96px;
-   margin-top: 220px;
+   margin-top: 175px;
   align-items: center;
+  }
+
+  .description{
+    background-color:var(--primary-color);
+    color: white;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    padding: 50px;
+
+  }
+
+  
+
+  .imagenPeople{
+    margin-top: 50px;
+    object-fit: cover;
+    width: 102vw;
+    height: 207px;
   }
