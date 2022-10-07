@@ -361,8 +361,60 @@
     --rap-color-1: grey;
     --rap-color-2: brown;
     --rap-color-3: lightgreen;
+    --pop-color-1: rgba(220, 70, 175, 0.723);
+    
 }
 
-.holi {
-    color: var(--reggae-color-1);
+
+
+.pop {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px; 
+  margin-bottom: 30px;
+}
+
+img {
+  object-fit:  cover;
+  width: 80%;
+  height: 120px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 5px var(--pop-color-1) ; 
+}
+.popwhite {
+  position: absolute;
+  font-size: 50px;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.popTitle{
+  background-color: var(--primary-color);
+  padding: 5px 10px 5px 10px;
+  color: var(--secondary-color);
+  border-radius: 15px;
+  display: inline-block;
+  font-size: 20px ;
+  box-shadow: 1px 2px 5px var(--pop-color-1) ; 
+}
+
+.popPar {
+  background-color: var(--primary-color);
+  padding: 5px 10px 5px 10px;
+  color: var(--secondary-color);
+  border-radius: 15px;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.songContainer {
+  width: 100%;
+  
+}
+
+.popSection {
+  padding: 1em;;
 }
