@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mukta&family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
 /* css reset */
 
@@ -372,11 +373,17 @@ img {
 }
 
 h1 {
-    font-family: 'Ek Mukta';
+    font-family: 'Inter';
+    font-weight: 200;
+}
+
+h2 {
+    font-family: 'Inter';
+    font-weight: 200;   
 }
 
 p {
-    font-family: 'Raleway';
+    font-family: 'Rek Mukta';
 }
 
 
@@ -470,7 +477,7 @@ p {
   @media only screen and (max-width: 600px){
     .namelanding{
       font-size: 50px !important;
-    }
+    
 
   }
 
@@ -506,3 +513,29 @@ p {
     width: 102vw;
     height: 207px;
   }
+  /* here ends navbar */
+
+  .genreContainer {
+    margin-top: 10em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+  }
+
+  .genreTitle {
+    background-color: var(--primary-color);
+    width: 100%;
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 1em;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .genreButton {
+    width: 50%;
+  }}
