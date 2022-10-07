@@ -352,6 +352,8 @@
 
   /* css variables */
 
+
+
 :root {
     --primary-color: black;
     --secondary-color: white;
@@ -363,6 +365,144 @@
     --rap-color-3: lightgreen;
 }
 
-.holi {
-    color: var(--reggae-color-1);
+/* css variables end, navbar starts */
+
+img {
+    max-width: 100%;
 }
+
+h1 {
+    font-family: 'Ek Mukta';
+}
+
+p {
+    font-family: 'Raleway';
+}
+
+
+.navbar {
+    display: flex;
+    background-color: var(--primary-color);
+    align-items: center;
+    justify-content: space-around;
+    padding: 4px;
+    font-family: 'Raleway';
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.navbarDropdownBtn {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border: none;
+    outline: 1px solid white;
+    outline-offset: 1px;
+    border-radius: 4px;
+    font-size: 12px;
+    top: 45px;
+}
+
+.navbarDropdown {
+    position: relative;
+}
+
+.dropdownItem {
+    display: block;
+    text-align: center;
+}
+
+.dropdownItem:hover {
+    transition: 1s ease-in-out;
+    color: purple;
+    background-color: rgba(128, 128, 128, 0.061);
+    cursor: pointer;
+}
+
+.navbarDropdownContent {
+    flex-direction: column;
+    display: none;
+    background-color: white;
+    position: relative;
+    min-width: 115px;
+    z-index: 1;
+    top: 45px;
+    right: 0;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.155);
+}
+
+.navbarDropdownBtn:focus-within +.navbarDropdownContent {display: block; position: absolute;}
+
+.navbarLogo {
+}
+
+
+.navbarHomebtn {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+    width: 115px;
+    height: 29px;
+    font-size: 12px;
+	background-image: linear-gradient(to right top, #dd34ff, #ff12a0, #7f2fff, #974dff, #ebe4e7);
+    background-size: 50% auto;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    animation: gradientAnim 7.5s ease  alternate infinite;
+}
+
+
+
+.navbarHomebtn:hover {
+    border-color: #7f2fff;
+    border-width: 2px;
+}
+
+@keyframes gradientAnim {
+    to {
+      background-position: 100% top;
+    }
+  }
+
+
+
+  @media only screen and (max-width: 600px){
+    .namelanding{
+      font-size: 50px !important;
+    }
+
+  }
+
+  .namelanding{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   font-family: 'Raleway';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 96px;
+   margin-top: 175px;
+  align-items: center;
+  }
+
+  .description{
+    background-color:var(--primary-color);
+    color: white;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    text-align: center;
+    padding: 50px;
+
+  }
+
+  
+
+  .imagenPeople{
+    margin-top: 50px;
+    object-fit: cover;
+    width: 102vw;
+    height: 207px;
+  }
