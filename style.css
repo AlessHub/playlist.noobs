@@ -524,6 +524,7 @@ p {
   font-size: 96px;
   margin-top: 175px;
   align-items: center;
+  color: var(--primary-color);
 }
 
 .description {
@@ -788,10 +789,6 @@ i{
   width: 100%;
   justify-content: center;
   padding: 30px;
-}
-=======
-  box-shadow: 1px 2px 5px var(--rockmetal-color-1) ; 
-  
 }
 
 .songContainer {
