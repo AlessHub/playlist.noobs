@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>playlist.noobs</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/26df81fffd.js" crossorigin="anonymous"></script>
   </head>
   <header>
@@ -33,45 +35,137 @@
       <Section class="">
         <h1 class="namelanding">playlist.noob’s</h1>
         <div><p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. Adipiscing aliquet tempus enim amet nulla id. Vitae pellentesque molestie quisque lorem tellus aliquam.Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. Adipiscing aliquet tempus enim amet nulla id. Vitae pellentesque molestie quisque lorem tellus aliquam.</p></div>
-        <div class="container"><img class="imagenPeople" src="/images/Captura de Pantalla 2022-10-06 a las 14.31.25.png" alt=""  ></div>
+        <div class="container"><img class="imagenPeople" src="/images/Captura de Pantalla 2022-10-06 a las 14.31.25.png" alt="Picture of a sign with neon lights that says 'MUSIC FOR THE PEOPLE'"  ></div>
       </Section>
     <section class="genreContainer">
           <h1 class="genreTitle">GÉNEROS</h1>
-          <img src="/images/rockmetal.png" class="genreButton">
-          <img src="/images/rap.png" class="genreButton">
-          <img src="/images/edm.png" class="genreButton">
-          <img src="/images/pop.png" class="genreButton">
-          <img src="/images/reggae.png" class="genreButton">
+          <div class="genreButton" onmouseover="this.style='box-shadow: rgba(20, 20, 20, 0.925) 0px 0px 5px 5px;';" onmouseout="this.style='box-shadow:none';">
+            <img class="genreBtnImg" src="/images/rockmetalempty.png" alt="A picture representing Rock Metal">
+            <h1 class="genreBtnTitle">Rock Metal</h1>
+          </div>
+          <div class="genreButton">
+            <img class="genreBtnImg" src="/images/rapempty.png" alt="A picture representing Rap music">
+            <h1 class="genreBtnTitle">Rap</h1>
+          </div>
+          <div class="genreButton">
+            <img class="genreBtnImg" src="/images/edmempty.png" alt="A picture representing Edm music">
+            <h1 class="genreBtnTitle">Edm</h1>
+          </div>
+          <div class="genreButton">
+            <!-- <img src="/images/pop grande.png" alt="">  -->
+            <img class="genreBtnImg" src="/images/pop.jpg" alt="A picture representing Pop music"> 
+            <h1 class="genreBtnTitle"> POP </h1>
+          </div>
+          <div class="genreButton">
+            <img class="genreBtnImg" src="/images/reggaeempty.png" alt="A picture representing Reggae music">
+            <h1 class="genreBtnTitle">Reggae</h1>
+          </div>
           <img class="genreButton" style="display: none;">
 
-        </section>
-        <section class="popSection"> 
+    </section>
+
+
+    <section class="popSection"> 
           <div class="pop">
           <!-- <img src="/images/pop grande.png" alt="">  -->
-          <img src="/images/pop.jpg" alt="imagenpop"> 
+          <img class="popSectionImg"src="/images/pop.jpg" alt="A picture representing Pop music"> 
           <h1 class="popwhite"> POP </h1>
           </div>
 
-          <h1 class="popTitle"> Name Curador</h1>
+          <h1 class="popTitle" data-aos="zoom-in-right"> Name Curador</h1>
 
           <p class="popPar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. Adipiscing aliquet tempus enim amet nulla id. Vitae pellentesque molestie quisque lorem tellus aliquam.</p>
 
-          <h1 class="popTitle"> ( Caracteristicas ) Popular en los 90's</h1>
+          <h1 class="popTitle" data-aos="zoom-in-right"> ( Caracteristicas ) Popular en los 90's</h1>
 
           <div class="songContainer">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6I9VzXrHxO9rA9A5euc8Ak?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="";overflow="hidden"; allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6I9VzXrHxO9rA9A5euc8Ak?utm_source=generator" width="100%" height="300" frameBorder="0" allowfullscreen="";overflow="hidden"; allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
           </div>     
           
           <p class="popPar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. </p>
 
-          <h1 class="popTitle"> ( Caracteristicas ) Pop de los 90's </h1>
+          <h1 class="popTitle" data-aos="zoom-in-right"> ( Caracteristicas ) Pop de los 90's </h1>
 
           <div class="songContainer">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/47BBI51FKFwOMlIiX6m8ya?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/47BBI51FKFwOMlIiX6m8ya?utm_source=generator" width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
           </div>     
           
           <p class="popPar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. </p>
+        </section>
+        <section class="rockmetalSection"> 
+          <div class="rockmetal">
+          <img src= "images/rock_sin_titulo.png" alt="Imagen que representa los géneros de Rock y  Metal"> 
+          <h1 class="rockmetalWhite"> ROCK METAL </h1>
+          </div>
 
+          <h1 class="rockmetalTitle"> Name Curador</h1>
+
+          <p class="rockmetalPar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. Adipiscing aliquet tempus enim amet nulla id. Vitae pellentesque molestie quisque lorem tellus aliquam.</p>
+
+          <h1 class="rockmetalTitle"> ( Caracteristicas ) Agrupación icónica del Heavy Metal y el Hard Rock Británico </h1>
+
+          <div class="songContainer">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/57bgtoPSgt236HzfBOd8kj?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>     
+          
+          <p class="rockmetalPar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. </p>
+
+          <h1 class="rockmetalTitle"> ( Caracteristicas ) Agrupación de gran importancia para el rock y el Trash Metal </h1>
+
+          <div class="songContainer">
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0nLiqZ6A27jJri2VCalIUs?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+          </div>     
+          
+          <p class="rockmetalPar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. </p>
+    </section>
+
+        <section class="reggaeSection">
+          <div class="reggae">
+            <!-- <img src="/images/pop grande.png" alt="">  -->
+            <img class="imgReggae" src="/images/reggae.png" alt="imagenreggae"> 
+            <h1 class="reggaewhite"> REGGAE </h1>
+            </div>
+  
+            <h1 class="reggaeTitle"> Name Curador</h1>
+  
+            <p class="reggaePar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. Adipiscing aliquet tempus enim amet nulla id. Vitae pellentesque molestie quisque lorem tellus aliquam.</p>
+  
+            <h1 class="reggaeTitle"> ( Caracteristicas ) Popular en los 90's</h1>
+  
+            <div class="songContainer">
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6I9VzXrHxO9rA9A5euc8Ak?utm_source=generator" width="100%" height="300" frameBorder="0" allowfullscreen="";overflow="hidden"; allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>     
+            
+            <p class="reggaePar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. </p>
+  
+            <h1 class="reggaeTitle"> ( Caracteristicas ) Reggae antiguo </h1>
+  
+            <div class="songContainer">
+              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/47BBI51FKFwOMlIiX6m8ya?utm_source=generator" width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+            </div>     
+            
+            <p class="reggaePar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. </p>
+        </section>
     </main>
-  <footer></footer>
+  <footer class="footerContainer">
+    <div class="box">
+      <ul class="sobreNosotrosContainer">
+          <li class="nosotros"><b>Sobre Nosotros</b></li>
+          <li><i class="fa-solid fa-location-dot"></i>Av. Bogatell, 83, Barcelona</li>
+          <li><i class="fa-solid fa-envelope"></i>info@factoriaf5.org</li>
+      </ul>
+      <div class="social">
+          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-square-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+      </div>
+  </div>
+  <div class="copyright">
+      <p>Copyright © 2022 Playlist.Noob’s</p>
+  </div>
+  </footer>
 </html>
+<script>
+  AOS.init();
+</script>
+
