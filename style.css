@@ -481,14 +481,14 @@ p {
   }
 
   .namelanding{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   font-family: 'Raleway';
-   font-style: normal;
-   font-weight: 700;
-   font-size: 96px;
-   margin-top: 175px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  margin-top: 175px;
   align-items: center;
   }
 
@@ -643,4 +643,51 @@ p {
 
 .reggaeSection {
   padding: 1em;;
+}
+
+*{
+  margin:0;
+  color: grey;
+}
+
+.footerContainer{
+  background-color: rgba(128, 128, 128, 0.228);
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 30px;
+}
+
+.sobreNosotrosContainer{
+  list-style: none;
+  line-height: 30px;
+  width: 50%;
+}
+
+
+i{
+  padding-right: 10px;
+}
+
+.social{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  text-align: center;
+  font-size: 30px;
+  
+}
+
+.copyright{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 30px;
 }
