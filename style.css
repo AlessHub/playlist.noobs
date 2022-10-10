@@ -578,7 +578,7 @@ p {
 .genreButton {
   position: relative;
   display: flex;
-  width: 40%;
+  width: 100%;
   align-items: center;
   justify-content: center;
   border-radius: 25px;
@@ -587,6 +587,8 @@ p {
 
 .genreBtnImg {
   border-radius: 25px;
+  height: 100px;
+  width: 70%;
 }
 
 .genreBtnTitle {
@@ -602,7 +604,7 @@ p {
   position: absolute;
 }
 
-.pop {
+.genre {
   position: relative;
   width: 100%;
   display: flex;
@@ -614,138 +616,60 @@ p {
 }
 
 
-.popSectionImg {
+.sectionImg {
   object-fit: cover;
-  width: 80%;
+  width: 100%;
   height: 120px;
+  object-fit: cover;
   border-radius: 20px;
-  box-shadow: 1px 2px 5px var(--pop-color-1) ; 
 }
 
-.popwhite {
+.textImg {
   position: absolute;
   font-size: 50px;
   color: var(--secondary-color);
   font-weight: bold;
 }
 
-.popTitle {
+.curatorName {
+  background-color: var(--primary-color);
+  padding: 5px 10px 5px 10px;
+  color: var(--secondary-color);
+  display: inline-block;
+  font-size: 1em;
+  width: 100%;
+}
+
+.genrePar {
   background-color: var(--primary-color);
   padding: 5px 10px 5px 10px;
   color: var(--secondary-color);
   border-radius: 15px;
+  display: inline-block;
+  max-width: 100%;
+}
+
+.songName {
+  background-color: var(--primary-color);
+  padding: 5px 10px 5px 10px;
+  color: var(--secondary-color);
   display: inline-block;
   font-size: 20px;
-  box-shadow: 1px 2px 5px var(--pop-color-1);
-}
+  width: 100%;
 
-.popPar {
-  background-color: var(--primary-color);
-  padding: 5px 10px 5px 10px;
-  color: var(--secondary-color);
-  border-radius: 15px;
-  display: inline-block;
-  max-width: 100%;
 }
 
 .songContainer {
   width: 100%;
 }
 
-.popSection {
+.genreSection {
   padding: 1em;;
-}
-
-
-.reggae {
-position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px; 
-  margin-bottom: 30px;
-}
-
-.rockmetal {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px; 
-  margin-bottom: 30px;
-}
-
-.imgReggae {
-  object-fit:  cover;
-  width: 80%;
-  height: 120px;
-  border-radius: 20px;
-  box-shadow: 1px 2px 5px var(--reggae-color-1) ; 
-}
-
-.reggaewhite {
- position: absolute;
-  font-size: 50px;
-  color: var(--secondary-color);
-  font-weight: bold;
-  }
-  
-.rockmetalWhite {
-  position: absolute;
-  font-size: 50px;
-  color: var(--secondary-color);
-  font-weight: bold;
-}
-
-
-.reggaeTitle{
-  background-color: var(--primary-color);
-  padding: 5px 10px 5px 10px;
-  color: var(--secondary-color);
-  border-radius: 15px;
-  display: inline-block;
-  font-size: 20px ;
-  box-shadow: 1px 2px 5px var(--reggae-color-1) ; 
-}
-
-.rockmetalTitle{
-  background-color: var(--primary-color);
-  padding: 5px 10px 5px 10px;
-  color: var(--secondary-color);
-  border-radius: 15px;
-  display: inline-block;
-  font-size: 20px ;
-  box-shadow: 1px 2px 5px var(--rockmetal-color-1); 
-}
-
-.reggaePar {
-  box-shadow: 1px 2px 5px var(--reggae-color-1);
-  background-color: var(--primary-color);
-  padding: 5px 10px 5px 10px;
-  color: var(--secondary-color);
-  border-radius: 15px;
-  display: inline-block;
-  max-width: 100%;
-}
-
-.rockmetalPar {
-  background-color: var(--primary-color);
-  padding: 5px 10px 5px 10px;
-  color: var(--secondary-color);
-  border-radius: 15px;
-  display: inline-block;
-  max-width: 100%;
 }
 
 .songContainer {
   width: 100%;
   
-}
-
-.reggaeSection {
-  padding: 1em;;
 }
 
 *{
@@ -799,62 +723,6 @@ i{
 
 .songContainer {
   width: 100%;
-}
-
-.rockmetalSection {
-  padding: 1em;
-
-  ;
-}
-
-.edm {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  
-}
-
-.edmSectionImg {
-  object-fit: cover;
-  width: 80%;
-  height: 120px;
-  border-radius: 20px;
-}
-
-.edmwhite {
-  position: absolute;
-  font-size: 50px;
-  color: var(--secondary-color);
-  font-weight: bold;
-}
-
-.edmTitle {
-  background-color: var(--primary-color);
-  padding: 10px 15px 10px 15px;
-  color: var(--secondary-color);
-  border-radius: 15px;
-  display: inline-block;
-  font-size: 20px;
-  box-shadow: 1px 2px 5px var();
-}
-
-.edmPar {
-  background-color: var(--primary-color);
-  padding: 30px 20px 20px 30px;
-  color: var(--secondary-color);
-  border-radius: 15px;
-  font-size: 20px;
-  max-width: 100%;
-}
-
-.edmSection {
-  padding: 1em;
-  
-
 }
 
 .moreBtn {
