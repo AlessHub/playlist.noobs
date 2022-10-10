@@ -453,7 +453,6 @@ p {
 }
 
 .dropdownItem:hover {
-  transition: 1s ease-in-out;
   color: purple;
   background-color: rgba(128, 128, 128, 0.061);
   cursor: pointer;
@@ -485,8 +484,8 @@ p {
   border-radius: 8px;
   width: 115px;
   height: 29px;
-  font-size: 12px;
-  background-image: linear-gradient(to right top, #dd34ff, #ff12a0, #7f2fff, #974dff, #ebe4e7);
+  font-size: 14px;
+  background-image: linear-gradient(to right top, #dd34ff, #ff12a0, #9859fd, #b581ff, #ebe4e7);
   background-size: 50% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -527,7 +526,7 @@ p {
   font-style: normal;
   font-weight: 700;
   font-size: 96px;
-  margin-top: 175px;
+  padding: 2em 0em 0em 0em;
   align-items: center;
   color: var(--primary-color);
 }
@@ -858,3 +857,65 @@ i{
 
 }
 
+.moreBtn {
+  text-decoration: none;
+   font-family:'Inter';
+}
+
+.moreBtn:hover {
+  color:#7f2fff;
+}
+
+
+/* animation */
+
+.music {
+  height: 24px;
+  width: 24px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1px;
+}
+
+.music span {
+  height: 20px;
+  width: 2px;
+  background-color: black;
+  transform-origin: center;
+}
+
+.music span:nth-child(1) {
+  animation: music 400ms infinite alternate;
+}
+
+.music span:nth-child(2) {
+  animation: music 450ms infinite alternate-reverse;
+}
+
+.music span:nth-child(3) {
+  animation: music 380ms infinite alternate;
+}
+
+.music span:nth-child(4) {
+  animation: music 410ms infinite alternate;
+}
+
+.music span:nth-child(5) {
+  animation: music 405ms infinite alternate-reverse;
+}
+
+.music span:nth-child(6) {
+  animation: music 430ms infinite alternate;
+}
+
+@keyframes music {
+  from {
+    opacity: 0.4;
+    transform: scaleY(0.2);
+  }
+  to {
+    opacity: 0.8;
+    transform: scaleY(0.8);
+  }
+}
