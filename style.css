@@ -511,7 +511,12 @@ p {
 @media only screen and (max-width: 600px) {
   .namelanding {
     font-size: 50px !important;
-  }}
+  }
+  h1 {
+    font-size: 1.5em;
+    margin: 0.67em 0;
+  }
+}
 
 
 .namelanding {
@@ -574,7 +579,7 @@ p {
 .genreButton {
   position: relative;
   display: flex;
-  width: 50%;
+  width: 40%;
   align-items: center;
   justify-content: center;
   border-radius: 25px;
@@ -799,6 +804,57 @@ i{
 
 .rockmetalSection {
   padding: 1em;
+
+  ;
+}
+
+.edm {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  
+}
+
+.edmSectionImg {
+  object-fit: cover;
+  width: 80%;
+  height: 120px;
+  border-radius: 20px;
+}
+
+.edmwhite {
+  position: absolute;
+  font-size: 50px;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.edmTitle {
+  background-color: var(--primary-color);
+  padding: 10px 15px 10px 15px;
+  color: var(--secondary-color);
+  border-radius: 15px;
+  display: inline-block;
+  font-size: 20px;
+  box-shadow: 1px 2px 5px var();
+}
+
+.edmPar {
+  background-color: var(--primary-color);
+  padding: 30px 20px 20px 30px;
+  color: var(--secondary-color);
+  border-radius: 15px;
+  font-size: 20px;
+  max-width: 100%;
+}
+
+.edmSection {
+  padding: 1em;
+  
 
 }
 
