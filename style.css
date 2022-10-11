@@ -83,6 +83,7 @@ pre {
 
 a {
   background-color: transparent;
+  text-decoration: none;
 }
 
 /**
@@ -400,6 +401,13 @@ template {
 
 /* css variables end, navbar starts */
 
+
+.genreButton:hover,
+.genreButton:focus {
+  box-shadow: 0px 5px 15px -5px var(--rockmetal-color-1);
+  transform: translateY(-2px);
+}
+
 img {
   max-width: 100%;
 }
@@ -473,7 +481,7 @@ p {
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.155);
 }
 
-.navbarDropdownBtn:focus-within+.navbarDropdownContent {
+.navbarDropdown:focus-within .navbarDropdownContent {
   display: block;
   position: absolute;
 }
