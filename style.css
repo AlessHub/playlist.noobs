@@ -449,6 +449,11 @@ p {
   border-radius: 4px;
   font-size: 12px;
   top: 45px;
+  background-image: linear-gradient(to right top, #dd34ff, #ff12a0, #9859fd, #b581ff, #ebe4e7);
+  background-size: 50% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientAnim 7.5s ease alternate infinite;
 }
 .navbarHidden {
   display: none;
@@ -459,8 +464,11 @@ p {
 }
 
 .dropdownItem {
+  padding: 7px;
   display: block;
   text-align: center;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .dropdownItem:hover {
@@ -653,10 +661,9 @@ p {
 }
 
 .genrePar {
-  background-color: var(--primary-color);
+  border: 1px solid black;
   padding: 5px 10px 5px 6px;
-  color: var(--secondary-color);
-  border-radius: 15px;
+  color: var(--primary-color);
   display: inline-block;
   max-width: 100%;
 }
