@@ -485,7 +485,6 @@ p {
   flex-direction: column;
   display: none;
   background-color: var(--secondary-color);
-  position: relative;
   min-width: 115px;
   z-index: 1;
   top: 45px;
@@ -500,7 +499,7 @@ p {
 
 
 
-.navbarHomebtn {
+.navbarBtn {
   color: var(--secondary-color);
   background-color: var(--primary-color);
   border: 1px solid var(--secondary-color);
@@ -517,7 +516,7 @@ p {
 
 
 
-.navbarHomebtn:hover {
+.navbarBtn:hover {
   border-color: #7f2fff;
   border-width: 2px;
 }
@@ -531,7 +530,7 @@ p {
 
 
 @media only screen and (max-width: 600px) {
-  .namelanding {
+  .nameLanding {
     font-size: 50px !important;
   }
   h1 {
@@ -541,7 +540,7 @@ p {
 }
 
 
-.namelanding {
+.nameLanding {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -615,16 +614,8 @@ p {
 }
 
 .genreBtnTitle {
-  position: relative;
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  color: var(--secondary-color);
-}
-
-.genreBtnTitle {
   position: absolute;
+  color: var(--secondary-color);
 }
 
 .genre {
