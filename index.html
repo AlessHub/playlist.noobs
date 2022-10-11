@@ -12,7 +12,7 @@
   <body id="home">
   <header>
     <nav class="navbar">
-        <a href="#home">
+        <a href="#home" class="navbarHome">
             <button class="navbarHomebtn">
                 Home
             </button>
@@ -30,6 +30,16 @@
                 <a class="dropdownItem">Reggae</a>
             </div>
         </div>
+        <a href="#home" class="navbarHidden">
+          <button class="navbarHomebtn">
+              Playlist
+          </button>
+        </a>
+        <a href="#home" class="navbarHidden">
+          <button class="navbarHomebtn">
+              Contactos
+          </button>
+        </a>
     </nav>
   </header>
     <main>
@@ -46,28 +56,29 @@
 
     <section class="genreContainer">
           <h1 class="genreTitle">GÉNEROS</h1>
-          <div class="genreButton" onmouseover="this.style='box-shadow: rgba(20, 20, 20, 0.925) 0px 0px 5px 5px;';" onmouseout="this.style='box-shadow:none';">
-            <img class="genreBtnImg" src="/images/rockmetalempty.png" alt="A picture representing Rock Metal">
-            <h1 class="genreBtnTitle">Rock Metal</h1>
+          <div class="genreCardContainer">
+            <div class="genreButton">
+              <img class="genreBtnImg" src="/images/rockmetalempty.png" alt="A picture representing Rock Metal">
+              <h1 class="genreBtnTitle">Rock Metal</h1>
+            </div>
+            <div class="genreButton">
+              <img class="genreBtnImg" src="/images/rapempty.png" alt="A picture representing Rap music">
+              <h1 class="genreBtnTitle">Rap</h1>
+            </div>
+            <div class="genreButton">
+              <img class="genreBtnImg" src="/images/edmempty.png" alt="A picture representing Edm music">
+              <h1 class="genreBtnTitle">Edm</h1>
+            </div>
+            <div class="genreButton">
+              <!-- <img src="/images/pop grande.png" alt="">  -->
+              <img class="genreBtnImg" src="/images/pop.jpg" alt="A picture representing Pop music"> 
+              <h1 class="genreBtnTitle"> POP </h1>
+            </div>
+            <div class="genreButton">
+              <img class="genreBtnImg" src="/images/reggaeempty.png" alt="A picture representing Reggae music">
+              <h1 class="genreBtnTitle">Reggae</h1>
+            </div>
           </div>
-          <div class="genreButton">
-            <img class="genreBtnImg" src="/images/rapempty.png" alt="A picture representing Rap music">
-            <h1 class="genreBtnTitle">Rap</h1>
-          </div>
-          <div class="genreButton">
-            <img class="genreBtnImg" src="/images/edmempty.png" alt="A picture representing Edm music">
-            <h1 class="genreBtnTitle">Edm</h1>
-          </div>
-          <div class="genreButton">
-            <!-- <img src="/images/pop grande.png" alt="">  -->
-            <img class="genreBtnImg" src="/images/pop.jpg" alt="A picture representing Pop music"> 
-            <h1 class="genreBtnTitle"> POP </h1>
-          </div>
-          <div class="genreButton">
-            <img class="genreBtnImg" src="/images/reggaeempty.png" alt="A picture representing Reggae music">
-            <h1 class="genreBtnTitle">Reggae</h1>
-          </div>
-          <img class="genreButton" style="display: none;">
 
           <a class="moreBtn" href="https://factoriaf5.org">Ver mas <i class="fa-solid fa-arrow-down"></i></a>
           <h1>playlist.noobs</h1>
@@ -84,58 +95,64 @@
 
     <section class="genreSection"> 
           <div class="genre">
-          <!-- <img src="/images/pop grande.png" alt="">  -->
-          <img class="sectionImg"src="/images/pop.jpg" alt="A picture representing Pop music"> 
-          <h1 class="textImg"> Pop </h1>
+            <!-- <img src="/images/pop grande.png" alt="">  -->
+            <img class="sectionImg"src="/images/pop.jpg" alt="A picture representing Pop music"> 
+            <h1 class="textImg"> Pop </h1>
           </div>
 
           <h1 class="curatorName" data-aos="zoom-in-right"> Name Curador</h1>
 
           <p class="genrePar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. Adipiscing aliquet tempus enim amet nulla id. Vitae pellentesque molestie quisque lorem tellus aliquam.</p>
 
-          <h1 class="songName" data-aos="zoom-in-right">  Popular en los 90's</h1>
+          <div class="songWrapper">
+            <div class="songContainer">
+              <h1 class="songName" data-aos="zoom-in-right">  Popular en los 90's</h1>
+              <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/track/6I9VzXrHxO9rA9A5euc8Ak?utm_source=generator" width="100%" height="352"
+                frameBorder="0" allowfullscreen="" ;overflow="hidden" ;
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <p class="genrePar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. </p>
+            </div>     
 
-          <div class="songContainer">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6I9VzXrHxO9rA9A5euc8Ak?utm_source=generator" width="100%" height="300" frameBorder="0" allowfullscreen="";overflow="hidden"; allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-          </div>     
+            <div class="songContainer">
+              <h1 class="songName" data-aos="zoom-in-right">  Pop de los 90's </h1>
+              <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/track/47BBI51FKFwOMlIiX6m8ya?utm_source=generator" width="100%" height="352"
+                frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+                <p class="genrePar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. </p>
+            </div>  
+          </div>
+      </section>
           
-          <p class="genrePar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. </p>
-
-          <h1 class="songName" data-aos="zoom-in-right">  Pop de los 90's </h1>
-
-          <div class="songContainer">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/47BBI51FKFwOMlIiX6m8ya?utm_source=generator" width="100%" height="300" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-          </div>     
-          
-          <p class="genrePar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. </p>
-        </section>
 
         <section class="genreSection"> 
           <div class="genre">
-          <!-- <img src="/images/pop grande.png" alt="">  -->
-          <img class="sectionImg" src="/images/rapempty.png" alt="A picture representing Rap music" style="box-shadow: 1px 2px 5px var(--primary-color)">
-          <h1 class="textImg">Rap </h1>
+            <!-- <img src="/images/pop grande.png" alt="">  -->
+            <img class="sectionImg" src="/images/rapempty.png" alt="A picture representing Rap music" style="box-shadow: 1px 2px 5px var(--primary-color)">
+            <h1 class="textImg">Rap </h1>
           </div>
 
           <h1 class="curatorName" data-aos="zoom-in-right"> Name Curador</h1>
-
           <p class="genrePar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. Adipiscing aliquet tempus enim amet nulla id. Vitae pellentesque molestie quisque lorem tellus aliquam.</p>
-
-          <h1 class="songName" data-aos="zoom-in-right">  Popular en los 90's</h1>
-
-          <div class="songContainer">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2g8HN35AnVGIk7B8yMucww?utm_source=generator&theme=0" width="100%" height="352"></iframe>
-          </div>     
+          <div class="songWrapper">
+            <div class="songContainer">
+              <h1 class="songName" data-aos="zoom-in-right">  Popular en los 90's</h1>
+              <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/track/2g8HN35AnVGIk7B8yMucww?utm_source=generator&theme=0" width="100%"
+                height="352" frameBorder="0"></iframe>
+              <p class="genrePar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. </p>
+            </div>     
           
-          <p class="genrePar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. </p>
 
-          <h1 class="songName" data-aos="zoom-in-right">  Rap de los 90's </h1>
-
-          <div class="songContainer">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1nSPlJY53DG3avK6UfpDpZ?utm_source=generator" width="100%" height="352"></iframe>
-          </div>     
-          
-          <p class="genrePar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. </p>
+            <div class="songContainer">
+              <h1 class="songName" data-aos="zoom-in-right">  Rap en español </h1>
+              <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/track/1nSPlJY53DG3avK6UfpDpZ?utm_source=generator" width="100%" height="352"
+                frameBorder="0"></iframe>
+              <p class="genrePar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. </p>
+            </div>     
+          </div>
         </section>
 
         <section class="genreSection"> 
@@ -144,26 +161,28 @@
           <img class="sectionImg"src="/images/edmempty.png" alt="A picture representing Pop music"> 
           <h1 class="textImg"> Edm </h1>
           </div>
-          <div class="containerParagraft">
           <h1 class="curatorName" data-aos="zoom-in-right"> Name Curador</h1>
-          <div class="emdP">
-            <p class="genrePar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. Adipiscing aliquet tempus enim amet nulla id. Vitae pellentesque molestie quisque lorem tellus aliquam.</p>
-          </div>
-          <h1 class="songName" data-aos="zoom-in-right">EDM en los 2000's</h1>
-          </div>
-          <div class="songContainer">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5UqCQaDshqbIk3pkhy4Pjg?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="";overflow="hidden"; allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-          </div>     
-          <div>
-          <p class="genrePar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. </p>
+          <p class="genrePar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. Adipiscing aliquet tempus enim amet nulla id. Vitae pellentesque molestie quisque lorem tellus aliquam.</p>
+          <div class="songWrapper">
+            
+            <div class="songContainer">
+              <h1 class="songName" data-aos="zoom-in-right">EDM en los 2000's</h1>
+              <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/track/5UqCQaDshqbIk3pkhy4Pjg?utm_source=generator" width="100%" height="352"
+                frameBorder="0" allowfullscreen="" ;overflow="hidden" ;
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+              <p class="genrePar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. </p>
+            </div>
 
-          <h1 class="songName" data-aos="zoom-in-right">EDM de los 2000's </h1>
-          </div>
-          <div class="songContainer">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/77OuOZhDxJSQLYnNIpX2AG?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-          </div>
-          <div>
-          <p class="genrePar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. </p>
+            
+            <div class="songContainer">
+              <h1 class="songName" data-aos="zoom-in-right">EDM de los 2000's </h1>
+              <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/track/77OuOZhDxJSQLYnNIpX2AG?utm_source=generator" width="100%" height="352"
+                frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+              <p class="genrePar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. </p>
+            </div>
           </div>
         </section>
 
@@ -174,24 +193,26 @@
           </div>
 
           <h1 class="curatorName"> Name Curador</h1>
-
           <p class="genrePar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. Adipiscing aliquet tempus enim amet nulla id. Vitae pellentesque molestie quisque lorem tellus aliquam.</p>
-
-          <h1 class="songName">  Agrupación icónica del Heavy Metal y el Hard Rock Británico </h1>
-
-          <div class="songContainer">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/57bgtoPSgt236HzfBOd8kj?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-          </div>     
+          <div class="songWrapper">
+            <div class="songContainer">
+              <h1 class="songName" data-aos="zoom-in-right">  Agrupación icónica del Heavy Metal y el Hard Rock Británico </h1>
+              <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/track/57bgtoPSgt236HzfBOd8kj?utm_source=generator" width="100%" height="352"
+                frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+              <p class="genrePar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. </p>
+            </div>     
           
-          <p class="genrePar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. </p>
-
-          <h1 class="songName">  Agrupación de gran importancia para el rock y el Trash Metal </h1>
-
-          <div class="songContainer">
-            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0nLiqZ6A27jJri2VCalIUs?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-          </div>     
-          
-          <p class="genrePar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. </p>
+            <div class="songContainer">
+              <h1 class="songName" data-aos="zoom-in-right">  Agrupación de gran importancia para el rock y el Trash Metal </h1>
+              <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/track/0nLiqZ6A27jJri2VCalIUs?utm_source=generator" width="100%" height="352"
+                frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+              <p class="genrePar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. </p>
+            </div>
+          </div>
         </section>
 
         <section class="genreSection">
@@ -199,27 +220,28 @@
             <!-- <img src="/images/pop grande.png" alt="">  -->
             <img class="sectionImg" src="/images/reggaeempty.png" alt="imagenreggae"> 
             <h1 class="textImg"> Reggae </h1>
-            </div>
-  
-            <h1 class="curatorName"> Name Curador</h1>
+          </div>
+          <h1 class="curatorName" data-aos="zoom-in-right"> Name Curador</h1>
   
             <p class="genrePar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. Adipiscing aliquet tempus enim amet nulla id. Vitae pellentesque molestie quisque lorem tellus aliquam.</p>
   
-            <h1 class="songName">Popular en los 90's</h1>
+          <div class="songWrapper">
+            <div class="songContainer">
+              <h1 class="songName" data-aos="zoom-in-right">Popular en los 90's</h1>
+              <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/track/3FwFJdQD5tl7yhaSs83ivZ?utm_source=generator" width="100%" height="352"
+                frameBorder="0"></iframe>
+              <p class="genrePar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. </p>
+            </div>     
   
             <div class="songContainer">
-              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3FwFJdQD5tl7yhaSs83ivZ?utm_source=generator" width="100%" height="352"></iframe>
-            </div>     
-            
-            <p class="genrePar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. </p>
-  
-            <h1 class="songName">Reggae antiguo </h1>
-  
-            <div class="songContainer">
-              <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3PQLYVskjUeRmRIfECsL0X?utm_source=generator" width="100%" height="352"></iframe>
-            </div>     
-            
-            <p class="genrePar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. </p>
+              <h1 class="songName" data-aos="zoom-in-right">Reggae antiguo </h1>
+              <iframe style="border-radius:12px"
+                src="https://open.spotify.com/embed/track/3PQLYVskjUeRmRIfECsL0X?utm_source=generator" width="100%" height="352"
+                frameBorder="0"></iframe>
+              <p class="genrePar"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. In pellentesque habitasse neque consectetur massa. </p>
+            </div>
+          </div>
         </section>
     </main>
 

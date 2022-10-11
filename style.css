@@ -442,6 +442,9 @@ p {
   font-size: 12px;
   top: 45px;
 }
+.navbarHidden {
+  display: none;
+}
 
 .navbarDropdown {
   position: relative;
@@ -672,6 +675,12 @@ p {
   width: 100%;
   
 }
+.genreCardContainer {
+  width: 100%;
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+}
 
 *{
   margin:0;
@@ -786,5 +795,66 @@ i{
   to {
     opacity: 0.8;
     transform: scaleY(0.8);
+  }
+}
+
+
+/* media queries */
+
+@media only screen and (min-width: 1024px) {
+  .navbarHidden {
+    display: block;
+  }
+  .navbarHome {
+    display: none;
+  }
+  .imagenPeople {
+    height: 208px;
+  }
+  .genreCardContainer {
+    width: 100%;
+    gap: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .genreBtnImg {
+    height: 200px;
+    width: 100%;
+  }
+
+  .genreButton {
+    display: flex;
+    width: 40%;
+    border-radius: 25px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  .songWrapper {
+    display: flex;
+    width: 100%;
+    gap: 4em;
+    justify-content: space-around;
+  }
+  .songName {
+    padding: 7px 0px 7px 0px;
+    text-align: center;
+  }
+  .genreSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .curatorName {
+    width: 20%;
+    text-align: center;
+  }
+  .sobreNosotrosContainer {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
