@@ -9,8 +9,8 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/26df81fffd.js" crossorigin="anonymous"></script>
   </head>
-  <body id="home">
-  <header>
+  <body>
+  <header id="home">
     <nav class="navbar">
         <a href="#home" class="navbarHome">
             <button class="navbarHomebtn">
@@ -21,21 +21,21 @@
             <img src="/images/logo.png" style="height: 70px ;  width: 70px;"/>
         </a>
         <div class="navbarDropdown">
-            <button class="navbarDropdownBtn"><span style="color:red">T</span>op <br>Recomendaciones</button>
+            <button class="navbarDropdownBtn"><span style="color:red">T</span>op <br>Recomendaciones</button> 
             <div class="navbarDropdownContent">
-                <a class="dropdownItem">Rock Metal</a>
-                <a class="dropdownItem">Rap</a>
-                <a class="dropdownItem">EDM</a>
-                <a class="dropdownItem">Pop</a>
-                <a class="dropdownItem">Reggae</a>
+                <a href="#rockmetal" class="dropdownItem">Rock Metal</a>
+                <a href="#rap" class="dropdownItem">Rap</a>
+                <a href="#edm" class="dropdownItem">EDM</a>
+                <a href="#pop" class="dropdownItem">Pop</a>
+                <a href="#reggae" class="dropdownItem">Reggae</a>
             </div>
         </div>
-        <a href="#home" class="navbarHidden">
+        <a href="https://factoriaf5.org" class="navbarHidden">
           <button class="navbarHomebtn">
               Playlist
           </button>
         </a>
-        <a href="#home" class="navbarHidden">
+        <a href="#footer" class="navbarHidden">
           <button class="navbarHomebtn">
               Contactos
           </button>
@@ -57,27 +57,27 @@
     <section class="genreContainer">
           <h1 class="genreTitle">GÉNEROS</h1>
           <div class="genreCardContainer">
-            <div class="genreButton">
-              <img class="genreBtnImg" src="/images/rockmetalempty.png" alt="A picture representing Rock Metal">
-              <h1 class="genreBtnTitle">Rock Metal</h1>
-            </div>
-            <div class="genreButton">
-              <img class="genreBtnImg" src="/images/rapempty.png" alt="A picture representing Rap music">
-              <h1 class="genreBtnTitle">Rap</h1>
-            </div>
-            <div class="genreButton">
+              <a href="#rockmetal" class="genreButton">
+                <img class="genreBtnImg" src="/images/rockmetalempty.png" alt="A picture representing Rock Metal">
+                <h1 class="genreBtnTitle">Rock Metal</h1>
+              </a>
+              <a href="#rap" class="genreButton">
+                <img class="genreBtnImg" src="/images/rapempty.png" alt="A picture representing Rap music">
+                <h1 class="genreBtnTitle">Rap</h1>
+              </a>
+            <a href="#edm" class="genreButton">
               <img class="genreBtnImg" src="/images/edmempty.png" alt="A picture representing Edm music">
               <h1 class="genreBtnTitle">Edm</h1>
-            </div>
-            <div class="genreButton">
+            </a>
+            <a href="#pop" class="genreButton">
               <!-- <img src="/images/pop grande.png" alt="">  -->
               <img class="genreBtnImg" src="/images/pop.jpg" alt="A picture representing Pop music"> 
               <h1 class="genreBtnTitle"> POP </h1>
-            </div>
-            <div class="genreButton">
+            </a>
+            <a href="#reggae" class="genreButton">
               <img class="genreBtnImg" src="/images/reggaeempty.png" alt="A picture representing Reggae music">
               <h1 class="genreBtnTitle">Reggae</h1>
-            </div>
+            </a>
           </div>
 
           <a class="moreBtn" href="https://factoriaf5.org">Ver mas <i class="fa-solid fa-arrow-down"></i></a>
@@ -92,7 +92,7 @@
           </div>
     </section>
 
-
+    <div id="pop"  style="width: 100%; height: 60px;"></div>
     <section class="genreSection"> 
           <div class="genre">
             <!-- <img src="/images/pop grande.png" alt="">  -->
@@ -125,7 +125,7 @@
           </div>
       </section>
           
-
+        <div id="rap" style="width: 100%; height: 60px;"></div>
         <section class="genreSection"> 
           <div class="genre">
             <!-- <img src="/images/pop grande.png" alt="">  -->
@@ -154,7 +154,7 @@
             </div>     
           </div>
         </section>
-
+        <div id="edm" style="width: 100%; height: 60px;"></div>
         <section class="genreSection"> 
           <div class="genre">
           <!-- <img src="/images/pop grande.png" alt="">  -->
@@ -185,10 +185,10 @@
             </div>
           </div>
         </section>
-
+        <div id="rockmetal" style="width: 100%; height: 60px;"></div>
         <section class="genreSection"> 
           <div class="genre">
-          <img class="sectionImg" src= "images/rockmetalempty.png" alt="Imagen que representa los géneros de Rock y  Metal"> 
+          <img  class="sectionImg" src= "images/rockmetalempty.png" alt="Imagen que representa los géneros de Rock y  Metal"> 
           <h1 class="textImg"> RockMetal </h1>
           </div>
 
@@ -214,7 +214,7 @@
             </div>
           </div>
         </section>
-
+        <div id="reggae" style="width: 100%; height: 60px;"></div>
         <section class="genreSection">
           <div class="genre">
             <!-- <img src="/images/pop grande.png" alt="">  -->
@@ -245,7 +245,7 @@
         </section>
     </main>
 
-  <footer class="footerContainer">
+  <footer class="footerContainer" id="footer">
     <div class="box">
       <ul class="sobreNosotrosContainer">
           <li class="nosotros"><b>Sobre Nosotros</b></li>
